@@ -53,6 +53,9 @@ The dashboard loads the CSV from:
 public/data/electric_vehicles_spec_2025.csv
 ```
 
+Data source:
+[Electric Vehicle Specifications Dataset 2025 on Kaggle](https://www.kaggle.com/datasets/urvishahir/electric-vehicle-specifications-dataset-2025/data).
+
 The dataset includes fields such as brand, model, top speed, battery capacity,
 battery type, torque, efficiency, range, acceleration, fast charging power,
 cargo volume, seats, drivetrain, segment, dimensions, body type, and source URL.
