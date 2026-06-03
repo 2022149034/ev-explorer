@@ -102,7 +102,18 @@ npm.cmd run preview
 
 ## Deploy
 
-EV Explorer is a static Vite app. To deploy:
+EV Explorer is configured for GitHub Pages at:
+
+```text
+https://2022149034.github.io/ev-explorer/
+```
+
+The Vite `base` path is set to `/ev-explorer/`, and the CSV is loaded through
+`import.meta.env.BASE_URL` so the app works from the GitHub Pages project path.
+
+Deployment is automated through `.github/workflows/deploy-pages.yml`.
+
+To deploy manually or on another static host:
 
 1. Run `npm.cmd run build`.
 2. Upload `dist/` to a static host such as Netlify, Vercel, GitHub Pages, or

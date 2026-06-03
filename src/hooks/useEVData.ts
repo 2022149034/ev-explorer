@@ -8,7 +8,7 @@ export function useEVData() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/data/electric_vehicles_spec_2025.csv")
+    fetch(`${import.meta.env.BASE_URL}data/electric_vehicles_spec_2025.csv`)
       .then((response) => {
         if (!response.ok) {
           throw new Error(`Unable to load EV data (${response.status})`);

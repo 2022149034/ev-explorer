@@ -96,7 +96,18 @@ npm.cmd run preview
 
 ## 部署
 
-EV Explorer 是一个静态 Vite 应用。部署步骤：
+EV Explorer 已配置为发布到 GitHub Pages：
+
+```text
+https://2022149034.github.io/ev-explorer/
+```
+
+项目中的 Vite `base` 已设置为 `/ev-explorer/`，CSV 数据也通过
+`import.meta.env.BASE_URL` 加载，因此可以在 GitHub Pages 的项目子路径下正常运行。
+
+自动部署工作流位于 `.github/workflows/deploy-pages.yml`。
+
+如果需要手动部署到其他静态托管平台：
 
 1. 运行 `npm.cmd run build`。
 2. 将 `dist/` 上传到 Netlify、Vercel、GitHub Pages 或 Cloudflare Pages 等静态托管平台。
