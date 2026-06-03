@@ -48,7 +48,7 @@ export default function App() {
   };
 
   return (
-    <main className="app-shell">
+    <main className={`app-shell app-shell--${mode}`}>
       <Header
         mode={mode}
         onAnalysis={goAnalysis}
